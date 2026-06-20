@@ -2,7 +2,6 @@
 
 **AI-Assisted Common Criteria (CC) Evaluation Platform** — automates ASE-class pre-auditing using a local LLM (Ollama), built for security evaluation labs working under **CEM:2022 Revision 1** / **ISO/IEC 18045:2022**.
 
-> Developed as part of the BSSN (Badan Siber dan Sandi Negara) Change Agent Acceleration Program 2026.
 > Fully **airgapped-capable** — no data ever leaves your machine. The AI model runs locally via [Ollama](https://ollama.com).
 
 ---
