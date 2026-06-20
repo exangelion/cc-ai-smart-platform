@@ -9,7 +9,7 @@
 
 ## ✨ What does it do?
 
-Common Criteria evaluation is traditionally a slow, paper-heavy process: an evaluator manually reads a Security Target (ST) document — often 100+ pages — and fills in a workbook covering 76 CEM work units across 7 ASE families. This typically takes **7–10 working days**.
+Common Criteria evaluation is traditionally a slow, paper-heavy process: an evaluator manually reads a Security Target (ST) document — often 100+ pages — and fills in a workbook covering 77 CEM work units across 7 ASE families. This typically takes **7–10 working days**.
 
 CC-AI Smart Platform automates the first pass of this process:
 
