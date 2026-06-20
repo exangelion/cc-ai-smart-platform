@@ -17,7 +17,7 @@ CC-AI Smart Platform automates the first pass of this process:
 2. A **local LLM** (Qwen2.5, recommended `qwen2.5:7b` or larger) reads the document and produces a verdict (PASS / FAIL / INCONCLUSIVE / N/A) for every work unit, with cited evidence and a confidence score.
 3. An **inline validation engine** scores the audit's reliability (schema integrity, traceability, confidence, hallucination risk, consistency) and flags which work units actually need human review.
 4. A human **Evaluator** reviews only the flagged items, overrides where needed, and pushes the result through a structured multi-role workflow (**Evaluator → Lead Evaluator → CB Auditor → Developer**) that mirrors a real CC lab's process — including Technical Meetings, Developer response tracking, and EOR (Evaluation Observation Report) generation.
-5. **Workbook (FR.MT.04.WB)** and **EOR (FR.MT.04.11)** PDF reports are generated directly from the audit, ready to route through your lab's existing SOP.
+5. **Workbook** and **EOR ** PDF reports are generated directly from the audit, ready to route through your lab's existing SOP.
 
 In testing across 5 real-world TOEs (532 work units total), `qwen2.5:7b` achieved a 73% average PASS rate with 100% evidence traceability — turning a multi-day manual task into a 2–4 hour AI pass plus focused human review.
 
