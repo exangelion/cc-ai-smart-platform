@@ -55,7 +55,7 @@ In testing across 5 real-world TOEs (532 work units total), `qwen2.5:7b` achieve
 - **Collaborative EOR Workspace** — Lead Evaluator can comment, override, and attach evidence images inline.
 - **Technical Meeting (TM1/TM2) management** — scheduling, minutes, and deadline tracking for CB Auditor coordination with developers.
 - **Developer Dashboard** — structured, append-only Sponsor/Developer Action + Evaluator Action threads (matches the official CC EOR resolution format).
-- **PDF report generation** — Workbook (FR.MT.04.WB format) and EOR (FR.MT.04.11 format) generated directly from audit results, ready for your lab's sign-off process.
+- **PDF report generation** — Workbook and EOR  generated directly from audit results, ready for your lab's sign-off process.
 - **100% local / airgapped-capable** — no external API calls; all AI inference happens via your local Ollama instance.
 
 ---
