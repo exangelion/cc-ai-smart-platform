@@ -242,7 +242,7 @@ In **Hasil Audit**, go through work units flagged for review (low confidence, IN
 
 ### 6. Generate Workbook & EOR
 
-Go to **Generate EOR** → choose the **Workbook** tab to download a `FR.MT.04.WB`-formatted PDF of all 76 work units, or the **EOR** tab to generate an `FR.MT.04.11`-formatted Evaluation Observation Report from your FAIL/INCONCLUSIVE findings.
+Go to **Generate EOR** → choose the **Workbook** tab to download a -formatted PDF of all 76 work units, or the **EOR** tab to generate an formatted Evaluation Observation Report from your FAIL/INCONCLUSIVE findings.
 
 ### 7. Push to Lead Evaluator
 
