@@ -288,7 +288,7 @@ Cycle 4: Developer
    → Evaluator/Lead reviews → marks FIXED or REISSUE
 ```
 
-This mirrors a real CC lab process and is designed to slot into existing SOPs (e.g. BSSN's `SOP.MT.04 Layanan Pengujian`) as a tooling layer — it does not replace formal sign-offs, BAST, or LSPro review steps.
+This mirrors a real CC lab process and is designed to slot into existing SOPs.
 
 ---
 
