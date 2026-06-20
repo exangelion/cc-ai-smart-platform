@@ -46,7 +46,7 @@ In testing across 5 real-world TOEs (532 work units total), `qwen2.5:7b` achieve
 
 ## 🚀 Features
 
-- **AI Pre-Audit Engine** — 76 work units across ASE_CCL.1, ASE_ECD.1, ASE_INT.1, ASE_OBJ.2, ASE_SPD.1, ASE_REQ.2, ASE_TSS.1, fully aligned to CEM:2022 R1.
+- **AI Pre-Audit Engine** — 77 work units across ASE_CCL.1, ASE_ECD.1, ASE_INT.1, ASE_OBJ.2, ASE_SPD.1, ASE_REQ.2, ASE_TSS.1, fully aligned to CEM:2022 R1.
 - **Deterministic shortcuts** — ASE_CCL.1 and ASE_ECD.1 sub-units are resolved without calling the LLM when no PP conformance or extended components are claimed, saving time and avoiding unnecessary model variance.
 - **5 "Junior RCC Evaluator" prompting skills** — Grounding Anchor (forces page citations), Negative Space Awareness, Chain-of-Thought forcing, Semantic Similarity Guard, and Confidence Calibration — designed to reduce hallucination versus naive LLM prompting.
 - **Inline Validation Engine** — automatic scoring (Schema 15 + Completeness 20 + Traceability 25 + Confidence 15 + Hallucination Risk 15 + Consistency 10 = 100) with a READY / REVIEW / REJECT verdict and per-family review-priority breakdown.
@@ -66,7 +66,7 @@ In testing across 5 real-world TOEs (532 work units total), `qwen2.5:7b` achieve
 │                  Streamlit Web App (app.py)               │
 │  ┌───────────────┐  ┌────────────────┐  ┌──────────────┐  │
 │  │  PDF Extractor │→ │  AI Audit Loop  │→ │  Validation   │  │
-│  │  (pdfplumber)  │  │  (76 work units)│  │  Engine       │  │
+│  │  (pdfplumber)  │  │  (77 work units)│  │  Engine       │  │
 │  └───────────────┘  └────────┬────────┘  └──────────────┘  │
 │                               │ HTTP                        │
 │                               ▼                              │
@@ -100,7 +100,7 @@ This is currently a **monolithic Streamlit application** by design — it's mean
 
 The platform's speed and AI audit quality depend heavily on which Ollama model you run. Below are realistic minimums based on internal testing.
 
-| Model | Parameters | Min RAM (CPU-only) | Recommended GPU VRAM | Approx. audit time (76 WU) | Quality notes |
+| Model | Parameters | Min RAM (CPU-only) | Recommended GPU VRAM | Approx. audit time (77 WU) | Quality notes |
 |---|---|---|---|---|---|
 | `qwen2.5:7b` | 7B | 16 GB | 6–8 GB (e.g. RTX 3060) | 1.5–3 hours | **Recommended minimum.** Empirically: ~73% PASS rate, 100% evidence traceability, low hallucination risk. |
 | `qwen2.5:14b` | 14B | 32 GB | 12–16 GB (e.g. RTX 4070 Ti / 3090) | 3–5 hours | Higher accuracy on harder families (ASE_OBJ.2, ASE_TSS.1). Use if hardware allows. |
@@ -228,9 +228,9 @@ In the sidebar under **Audit Config**:
 
 ### 3. Upload & Audit ST
 
-Go to **Upload & Audit ST**, upload your Security Target PDF, fill in TOE name/version/EAL, and click **Start AI Audit**. Progress is shown live as each of the 76 work units is processed.
+Go to **Upload & Audit ST**, upload your Security Target PDF, fill in TOE name/version/EAL, and click **Start AI Audit**. Progress is shown live as each of the 77 work units is processed.
 
-> 76 work units at `qwen2.5:7b` typically takes **1.5–3 hours** depending on your hardware and ST length. Keep the browser tab open during the audit — it runs synchronously in this version.
+> 77 work units at `qwen2.5:7b` typically takes **1.5–3 hours** depending on your hardware and ST length. Keep the browser tab open during the audit — it runs synchronously in this version.
 
 ### 4. Review the Validation Score
 
@@ -242,7 +242,7 @@ In **Hasil Audit**, go through work units flagged for review (low confidence, IN
 
 ### 6. Generate Workbook & EOR
 
-Go to **Generate EOR** → choose the **Workbook** tab to download a -formatted PDF of all 76 work units, or the **EOR** tab to generate an formatted Evaluation Observation Report from your FAIL/INCONCLUSIVE findings.
+Go to **Generate EOR** → choose the **Workbook** tab to download a -formatted PDF of all 77 work units, or the **EOR** tab to generate an formatted Evaluation Observation Report from your FAIL/INCONCLUSIVE findings.
 
 ### 7. Push to Lead Evaluator
 
